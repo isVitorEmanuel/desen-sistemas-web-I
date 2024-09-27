@@ -1,0 +1,11 @@
+.item-info {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #AAA;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.item-info > span {
+    font-weight: bolder;
+}

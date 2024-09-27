@@ -1,0 +1,15 @@
+.wrapper-perfil {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.sugestion-info p {
+    margin-bottom: 4px;
+}
+
+.sugestion-info span {
+    margin-top: 5px;
+    font-size: 0.8em;
+}

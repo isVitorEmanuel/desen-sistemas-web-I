@@ -1,0 +1,27 @@
+.action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    padding: 5px;
+    border-top: 2px solid #AAA;
+    border-bottom: 2px solid #AAA;
+}
+
+.action-buttons button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 20px;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+    cursor: pointer;
+    transition: all .3s ease-in-out;  
+}
+
+.action-buttons button:hover {
+    border: 1px solid #555;
+    background-color: #DDD;
+    transform: scale(1.03);
+}

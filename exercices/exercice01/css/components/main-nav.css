@@ -1,0 +1,26 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav > .nav-list div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+
+.main-nav > .nav-list > .wrapper-item-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-nav > .nav-list > .wrapper-item-text {
+        display: none;
+    }
+    
+    .main-nav > .nav-list > .wrapper-item-icon {
+        display: flex;
+    }
+}

@@ -1,0 +1,25 @@
+.nav-item {
+    padding: 5px 18px;
+    border: 1px solid #DDD;
+    margin: 0 10px;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;    
+}
+
+.main-nav > .nav-list > .wrapper-item-icon .nav-item {
+    padding: 5px 10px;
+}
+
+.nav-item:hover {
+    border: 1px solid #555;
+    background-color: #DDD;
+    transform: scale(1.03);
+}
+
+.nav-item > a {
+    color: #555;
+}
+
+.nav-item > a > img {
+    width: 25px;
+}

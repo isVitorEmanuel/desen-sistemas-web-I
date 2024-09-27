@@ -2,36 +2,243 @@
 
 <html>
     <head>
-        <title>Pimeiro Documento HTML</title>
-        <link rel = "stylesheet" href = "style.css">
+        <title>1º Exercício - WEB I</title>
+
+        <link rel = "stylesheet" href = "./css/reset.css">
+        <link rel = "stylesheet" href = "./css/components/main-header.css">
+        <link rel = "stylesheet" href = "./css/components/main-perfil.css">
+        <link rel = "stylesheet" href = "./css/components/main-nav.css">
+        <link rel = "stylesheet" href = "./css/components/nav-item.css">
+        <link rel = "stylesheet" href = "./css/components/main-content.css">
+        <link rel = "stylesheet" href = "./css/components/aside-left.css">
+        <link rel = "stylesheet" href = "./css/components/aside-rigth.css">
+        <link rel = "stylesheet" href = "./css/components/main-section.css">
+        <link rel = "stylesheet" href = "./css/components/publication.css">
+        <link rel = "stylesheet" href = "./css/components/title-content.css">
+        <link rel = "stylesheet" href = "./css/components/action-buttons.css">
+        <link rel = "stylesheet" href = "./css/components/wrapper-item.css">
+        <link rel = "stylesheet" href = "./css/components/item-info.css">
+        <link rel = "stylesheet" href = "./css/components/link-sugestions.css">
+        <link rel = "stylesheet" href = "./css/components/wrapper-perfil.css">
     </head>
 
     <body>
-        <header>
-            <h1>Meu Perfil</h1>
+        <header class = "main-header">
+            <h1 class = "main-title">
+                Meu Perfil
+            </h1>
         </header>
 
-        <main>
-            <div id = "perfil">
-                <img src = "imgs/Sem título.jpeg" alt = "">
-                <h2>Nome do Usuário</h2>
-                <p>Breve Biografia ou descrição pessoal.</p>
+        <div class = "main-perfil" id = "main-perfil">
+            <div class = "wrapper-info">
+                <img class = "user-image" src="https://via.placeholder.com/150x150" alt = "Placeholder">
 
-                <nav>
-                    <ul>
-                        <li> <a href = "#"> Linha do Tempo </a></li>
-                        <li><a href = "#"> Amigos </a></li>
-                        <li><a href = "#"> Fotos </a></li>
-                        <li><a href = "#"> Sobre </a></li>
-                    </ul>
-                </nav>
+                <h2 class = "user-name">Nome do Usuário</h2>
+                <p class = "user-bio">Breve Biografia ou descrição pessoal.</p>
             </div>
 
-            <div id = "main-content">
-                <aside id = "aside-left"></aside>
-                <section>  </section>
-                <aside id = "aside-rigth" ></aside>
-            </div>
+            <nav class = "main-nav">
+                <ul class = "nav-list">
+                    <div class = "wrapper-item-text">
+                        <li class = "nav-item" ><a href = "#"> Linha do Tempo </a></li>
+                        <li class = "nav-item" ><a href = "#"> Amigos </a></li>
+                        <li class = "nav-item" ><a href = "#"> Fotos </a></li>
+                        <li class = "nav-item" ><a href = "#"> Sobre </a></li>
+                    </div>
+
+                    <div class = "wrapper-item-icon">
+                        <li class = "nav-item" >
+                            <a href = "#">
+                                <img src = "imgs/view_timeline_20dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt = "">
+                            </a>
+                        </li>
+                        <li class = "nav-item" >
+                            <a href = "#"> 
+                                <img src = "imgs/group_20dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt = "">
+                            </a>
+                        </li>
+                        <li class = "nav-item" >
+                            <a href = "#"> 
+                                <img src = "imgs/image_20dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt = "">
+                            </a>
+                        </li>
+                        <li class = "nav-item" >
+                            <a href = "#"> 
+                                <img src = "imgs/error_20dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt = "">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <main class = "main-content">
+            <section class = "main-section">  
+                <h3 class = "title-content"> Publicações </h3>
+
+                <div class = "publication">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius tempora architecto, quia dolores aliquid alias tenetur necessitatibus 
+                        quae nulla accusamus. Temporibus aspernatur eligendi dolorem, maiores obcaecati beatae. Incidunt, quasi ipsa.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ipsam eligendi non ad ut, libero voluptas explicabo quo architecto 
+                        temporibus adipisci tempora, incidunt maxime atque repellendus! Corporis quasi labore similique!
+                    </p>
+
+                    <div class = "action-buttons">
+                        <button>
+                            <img src = "/imgs/favorite_22dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </button>
+
+                        <button>
+                            <img src = "/imgs/chat_22dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </button>
+
+                        <button>
+                            <img src = "/imgs/bookmark_22dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class = "publication">
+                    <img src="https://via.placeholder.com/1200x1200" alt = "Placeholder">
+                    <p> Legenda da primeira publicação! </p>
+
+                    <div class = "action-buttons">
+                        <button>
+                            <img src = "/imgs/favorite_22dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </button>
+
+                        <button>
+                            <img src = "/imgs/chat_22dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </button>
+
+                        <button>
+                            <img src = "/imgs/bookmark_22dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class = "publication">
+                    <img src="https://via.placeholder.com/1200x1200" alt = "Placeholder">
+                    <p> Legenda da segunda publicação! </p>
+
+                    <div class = "action-buttons">
+                        <button>
+                            <img src = "/imgs/favorite_22dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </button>
+
+                        <button>
+                            <img src = "/imgs/chat_22dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </button>
+
+                        <button>
+                            <img src = "/imgs/bookmark_22dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <aside class = "aside-left">
+                <h3 class = "title-content"> Mais Informações </h3>
+                
+                <div class = "wrapper-item">
+                    <div class = "item-info">
+                        <span>Cidade: </span>
+                        <p>Parnamirim</p>
+                    </div>
+
+                    <div class = "item-info">
+                        <span>Estado: </span>
+                        <p>RN</p>
+                    </div>
+
+                    <div class = "item-info">
+                        <span>Número: </span>
+                        <p>(00) 00000-0000</p>
+                    </div>
+
+                    <div class = "item-info">
+                        <span>Email: </span>
+                        <p>
+                            <a href = "">
+                                meuemail@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </aside>
+
+            <aside class = "aside-rigth" >
+                <h3 class = "title-content"> Sugeridos </h3>
+
+                <div class = "wrapper-sugestions">
+                    <a href = "" class = "link-sugestions">
+                        <div class = "wrapper-perfil">
+                            <img src = "https://via.placeholder.com/50x50" alt = "">
+                            <div class = "sugestion-info">
+                                <p>Nome da Sugestão</p>
+
+                                <span>Breve descrição</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "" class = "link-sugestions">
+                        <div class = "wrapper-perfil">
+                            <img src = "https://via.placeholder.com/50x50" alt = "">
+                            <div class = "sugestion-info">
+                                <p>Nome da Sugestão</p>
+
+                                <span>Breve descrição</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "" class = "link-sugestions">
+                        <div class = "wrapper-perfil">
+                            <img src = "https://via.placeholder.com/50x50" alt = "">
+                            <div class = "sugestion-info">
+                                <p>Nome da Sugestão</p>
+
+                                <span>Breve descrição</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "" class = "link-sugestions">
+                        <div class = "wrapper-perfil">
+                            <img src = "https://via.placeholder.com/50x50" alt = "">
+                            <div class = "sugestion-info">
+                                <p>Nome da Sugestão</p>
+
+                                <span>Breve descrição</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "" class = "link-sugestions">
+                        <div class = "wrapper-perfil">
+                            <img src = "https://via.placeholder.com/50x50" alt = "">
+                            <div class = "sugestion-info">
+                                <p>Nome da Sugestão</p>
+
+                                <span>Breve descrição</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "" class = "link-sugestions">
+                        <div class = "wrapper-perfil">
+                            <img src = "https://via.placeholder.com/50x50" alt = "">
+                            <div class = "sugestion-info">
+                                <p>Nome da Sugestão</p>
+
+                                <span>Breve descrição</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </aside>
         </main>
     </body>
 </html>

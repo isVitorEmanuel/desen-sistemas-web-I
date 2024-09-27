@@ -1,0 +1,15 @@
+.link-sugestions {
+    display: block;
+    border: 2px solid #FFF;
+    border-bottom: 2px solid #AAA;
+    padding: 11px 8px;
+    transition: all .3s ease-in-out;
+    margin: 3px 0;
+    color: #333;
+}
+
+.link-sugestions:hover {
+    transform: scale(1.01);
+    border: 2px solid #AAA;
+    border-radius: 10px;
+}
