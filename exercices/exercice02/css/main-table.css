@@ -1,0 +1,28 @@
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-table > thead {
+    background-color: rgb(14, 19, 1);
+}
+
+.row-table > .column-title {
+    font-weight: 500;
+    text-align: left;
+    color: #FFF;
+}
+
+.row-table > th, .row-table > td {
+    padding: 7px;
+    border: 1px solid #999;
+}
+
+tbody > .row-table:nth-child(even) {
+    background-color: #FFF;
+}
+
+tbody > .row-table:hover {
+    background-color: #BBB;
+    transition: all .2s ease-in-out;
+}
