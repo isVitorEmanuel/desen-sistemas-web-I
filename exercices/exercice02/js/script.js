@@ -3,7 +3,9 @@ import validatedInput from "./validatedInput.js";
 const addButton = document.querySelector("#btn-add");
 const tbody = document.querySelector('tbody');
 
-
+/**
+ * Add handler function in button.
+ */
 addButton.addEventListener("click", (e) => {
     e.preventDefault();
     
