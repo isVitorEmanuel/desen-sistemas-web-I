@@ -1,0 +1,23 @@
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 55%;
+    padding: 25px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1005px) {
+    main { width: 65%; }
+}
+
+@media (max-width: 800px) {
+    main { width: 85%; }
+}
+
+@media (orientation: portrait) {
+    main { width: 95%; } 
+}

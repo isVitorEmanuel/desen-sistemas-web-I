@@ -1,0 +1,15 @@
+.button-canvas {
+    padding: 8px 12px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(246, 82, 82);
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+.button-canvas:hover {
+    transform: scale(1.05);
+    background-color: rgb(249, 45, 45);
+}

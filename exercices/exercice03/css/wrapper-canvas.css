@@ -1,0 +1,37 @@
+:root {
+    --text-color: #555;
+}
+
+.wrapper-canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.wrapper-canvas h2 {
+    color: #333;
+}
+
+.wrapper-canvas label {
+    color: var(--text-color);
+}
+
+.wrapper-canvas select {
+    padding: 2px;
+    border-radius: 2px;
+    border: 1px solid #555;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.wrapper-canvas select option:hover {
+    background-color: var(--title-color);
+}
+
+@media (max-width: 800px) {
+    .wrapper-canvas h2 {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Exercice 03 - WEB I</title>
+
+        <!-- Links to CSS. -->
+        <link rel = "stylesheet" href = "./css/reset.css">
+        <link rel = "stylesheet" href = "./css/main.css">
+        <link rel = "stylesheet" href = "./css/header-section.css">
+        <link rel = "stylesheet" href = "./css/wrapper-canvas.css">
+        <link rel = "stylesheet" href = "./css/main-canvas.css">
+        <link rel = "stylesheet" href = "./css/button-canvas.css">
+    </head>
+
+    <body>
+        <main>
+            <div class = "header-section">
+                <h1 class = "title-header">Caixa de Conteúdo Interativo</h1>
+                <p>Desenhe uma imagem <span>bonita e interativa</span>. Clique nos itens da lista e desenhe no canvas!</p>
+            </div>
+
+            <div class = "wrapper-canvas">
+                <h2 class = "title-canvas">Área de Desenho</h2>
+
+                <form class = "form-canvas">
+                    <label for = "type-shape">Selecione a forma: </label>
+
+                    <select name = "type-shape" id = "type-shape">
+                        <option value = "LINE">Linha</option>
+                        <option value = "RECTANGULE">Retângulo</option>
+                        <option value = "CIRCLE">Círculo</option>
+                    </select>
+                </form>
+
+                <canvas id = "main-canvas" class = "main-canvas"></canvas>
+
+                <button id = "button-clear" class = "button-canvas">Limpar Canvas</button>
+
+                <script src = "./js/script.js"></script>
+            </div>
+        </main>
+    </body>
+</html>
