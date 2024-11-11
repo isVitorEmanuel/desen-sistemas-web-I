@@ -1,1 +1,1 @@
-<button (click) = "send()" class = "btn btn-primary">Enviar</button>
+<button [disabled]="!form.valid" (click) = "send()" class = "btn btn-primary">Enviar</button>
