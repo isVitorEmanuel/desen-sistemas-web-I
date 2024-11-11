@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-12 a">
+      <h3 class="display-6 title-post"> {{ post?.title }} </h3>
+      <data value="00/00/2000"> {{ post?.date }} </data>
+
+      <img [src]="post?.img_url" alt="img-post" class="img-fluid w-100">
+
+      <p>
+        {{ post?.description }}
+      </p>
+
+      <button [routerLink]="'/post'"
+              [state]="{ post: post }"
+              routerLinkActive="router-link-active"
+              class="col-md-12 btn btn-primary">
+        Ler mais
+      </button>
+    </div>
+  </div>
+</div>

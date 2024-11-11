@@ -1,0 +1,14 @@
+footer {
+  background-color: #EEE;
+  padding: 0 2rem;
+  margin: 0;
+}
+
+li {
+  margin: 0 .8rem;
+}
+
+i {
+  font-size: 1.5rem;
+  color: #222;
+}

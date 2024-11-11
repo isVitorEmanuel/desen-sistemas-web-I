@@ -1,0 +1,28 @@
+<div (click)="element(post)" class="container">
+  <div class="row">
+    <div class="col-12 col-md-4 d-flex align-items-stretch a">
+      <img [src]="post.img_url" alt="Imagem de exemplo" class="img-fluid w-100" style="object-fit: cover; height: 100%;">
+    </div>
+
+    <div class="col-12 col-md-8 b">
+      <h3> {{ post.title }} </h3>
+      <p>
+        {{ post.description }}
+      </p>
+
+      <span>
+
+        @if (post.categories.length) {
+          <button (click)="button($event, post.categories[0])" class="btn btn-outline-primary">
+            {{ post.categories[0] }}
+          </button>
+
+          @if (post.categories.length === 2) {
+            <button (click)="button($event, post.categories[1])" class="btn btn-outline-primary">Geek</button>
+          }
+        }
+      </span>
+    </div>
+  </div>
+</div>
+

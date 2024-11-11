@@ -1,0 +1,36 @@
+<div class="container my-container">
+  <p class = "display-6">
+    Aqui você encontra as principais notícias de Games.
+  </p>
+  <div class="row wrapper">
+    <main class="col-12 col-md-8">
+      <div class = "recent">
+        <h1 class = "display-4">Recentes</h1>
+
+        <div class="container">
+          <div class="row">
+            @for (post of postsMain; track post) {
+              <div class="col-12 col-md-6">
+                <app-main-notices [post]="post"></app-main-notices>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="col-12 col-md-3">
+      <h2 class = "display-4">Sugestões</h2>
+
+      <div class="container">
+        <div class="row">
+          @for (post of postsAside; track post) {
+            <div class="col-12 col-md-12">
+              <app-aside-notices [post]="post"></app-aside-notices>
+            </div>
+          }
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>

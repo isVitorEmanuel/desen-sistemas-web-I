@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-12 a">
+      <h3 class = "display-6"> {{ post?.title }} </h3>
+      <data [value]="post?.date"> {{ post?.date }} </data>
+      <p>
+        {{ post?.description }}
+      </p>
+
+      <img [src]="post?.img_url" alt="relevant-post" class="img-fluid w-100">
+
+      <span>
+        Por: <b> {{ post?.author }} </b>
+      </span>
+
+      <button class="col-md-12 btn btn-primary">Ler mais</button>
+    </div>
+  </div>
+</div>

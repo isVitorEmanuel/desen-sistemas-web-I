@@ -1,0 +1,48 @@
+<div class="container my-container">
+  <div class="row wrapper">
+    <main class="col-12 col-md-12 main-container">
+      <h1 class = "display-6 title"> {{post?.title}} </h1>
+      <div class="metadata">
+        <span>
+          Por: <b>{{ post?.author }}</b>
+        </span>
+        <data [value]="post?.date"> {{ post?.date }} </data>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 image-container">
+            <img [src]="post?.img_url" alt="{{ post?.title }}" class="img-fluid w-100">
+          </div>
+
+          <div class="col-12 description-container">
+            <p class="description">{{ post?.description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 image-container">
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat blanditiis dignissimos, inventore alias fugiat voluptates illo sapiente quae voluptatem ipsa veritatis delectus, ipsam facilis dolor? Iste incidunt tenetur dolor.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat blanditiis dignissimos, inventore alias fugiat voluptates illo sapiente quae voluptatem ipsa veritatis delectus, ipsam facilis dolor? Iste incidunt tenetur dolor.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat blanditiis dignissimos, inventore alias fugiat voluptates illo sapiente quae voluptatem ipsa veritatis delectus, ipsam facilis dolor? Iste incidunt tenetur dolor.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat blanditiis dignissimos, inventore alias fugiat voluptates illo sapiente quae voluptatem ipsa veritatis delectus, ipsam facilis dolor? Iste incidunt tenetur dolor.
+            </p>
+
+            <p class="">
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat blanditiis dignissimos, inventore alias fugiat voluptates illo sapiente quae voluptatem ipsa veritatis delectus, ipsam facilis dolor? Iste incidunt tenetur dolor.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat blanditiis dignissimos, inventore alias fugiat voluptates illo sapiente quae voluptatem ipsa veritatis delectus, ipsam facilis dolor? Iste incidunt tenetur dolor.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat blanditiis dignissimos, inventore alias fugiat voluptates illo sapiente quae voluptatem ipsa veritatis delectus, ipsam facilis dolor? Iste incidunt tenetur dolor.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat blanditiis dignissimos, inventore alias fugiat voluptates illo sapiente quae voluptatem ipsa veritatis delectus, ipsam facilis dolor? Iste incidunt tenetur dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button (click)="returnToPage()" class="col-md-1 btn btn-primary">Voltar</button>
+    </main>
+  </div>
+</div>
