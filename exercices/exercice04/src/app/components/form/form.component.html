@@ -1,0 +1,90 @@
+<form [formGroup]="form">
+  <div>
+    <div class="field-form">
+      <label for="username" class="form-label label-form">Nome: </label>
+      <input type="text"
+             class="form-control form-control-sm form-group col-md-8"
+             id="username"
+             placeholder="Digite seu nome"
+             aria-label="Digite seu nome"
+             formControlName="username"
+             [class.is-invalid]="form.get('username')?.errors && form.get('username')?.touched"
+      >
+
+      @if (this.form.get('username')?.hasError('required')) {
+        <div class = "invalid-feedback">O campo Nome é obrigatório!</div>
+      }
+
+      @if (this.form.get('username')?.hasError('maxlenth')) {
+        <div class = "invalid-feedback">O tamanho máximo é de 125 caracteres!</div>
+      }
+    </div>
+
+    <div class="field-form">
+      <label for="email" class="form-label label-form">Email: </label>
+      <input type="email"
+             class="form-control form-control-sm"
+             id="email"
+             placeholder="Digite seu Email"
+             aria-label="Digite seu Email"
+             formControlName="email"
+             [class.is-invalid]="form.get('email')?.errors && form.get('email')?.touched"
+      >
+
+      @if (this.form.get('email')?.hasError('required')) {
+        <div class = "invalid-feedback">O campo Email é obrigatório!</div>
+      }
+
+      @if (this.form.get('email')?.hasError('email')) {
+        <div class = "invalid-feedback">Informe um email válido!</div>
+      }
+    </div>
+
+    <div class="field-form">
+      <label for="password" class="form-label label-form">Senha: </label>
+      <input type="password"
+             class="form-control form-control-sm"
+             id="password"
+             placeholder="Digite sua senha"
+             aria-label="Digite sua senha"
+             formControlName="password"
+             [class.is-invalid]="form.get('password')?.errors && form.get('password')?.touched"
+      >
+
+      @if (this.form.get('password')?.hasError('required')) {
+        <div class = "invalid-feedback">O campo Senha é obrigatório!</div>
+      }
+    </div>
+
+    <div class="field-form">
+      <label for="gender" class="form-label label-form">Gênero: </label>
+      <select id = "gender"
+              formControlName="gender"
+              class="form-select form-select-sm"
+              aria-label="Opções"
+              [class.is-invalid]="form.get('gender')?.errors && form.get('gender')?.touched"
+      >
+        <option value="" disabled selected>Opções</option>
+        <option value="male">Masculino</option>
+        <option value="fame">Feminino</option>
+        <option value="nothing">Outro</option>
+      </select>
+
+      @if (this.form.get('gender')?.hasError('required')) {
+        <div class = "invalid-feedback">O campo Gênero é obrigatório!</div>
+      }
+    </div>
+
+    <div class="field-form">
+      <label for = "message" class="form-label label-form">Mensagem: </label>
+      <textarea class="form-control form-control-sm"
+                id="message"
+                rows="3"
+                formControlName="message"
+      >
+      </textarea>
+    </div>
+  </div>
+
+  <app-button-form [form]="form" [submitFunction]="submit"></app-button-form>
+</form>
